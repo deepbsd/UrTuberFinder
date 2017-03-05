@@ -5,7 +5,7 @@ var API_KEY = 'AIzaSyA_MlA_Pv1yElF8PY9hy_Ak6Mmr6g2xltY';
 
 function getChannelsList(searchTerm, callback) {
   var settings = {
-    url: YOUTUBE_BASE_URL,
+    url: YOUTUBE_BASE_URL1,
     data: {
       part: 'snippet',
       maxResults: 15,
