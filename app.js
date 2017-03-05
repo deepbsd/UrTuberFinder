@@ -76,8 +76,8 @@ function watchSubmit() {
     e.preventDefault();
     var query = $(this).find('.js-query').val();
     console.log('Query string: '+query);
-    getMostPopularVideos(query, displayYouTubeSearchData);
-    //getChannelsList(query, displayYouTubeSearchData);
+    //getMostPopularVideos(query, displayYouTubeSearchData);
+    getChannelsList(query, displayYouTubeSearchData);
   });
 }
 
