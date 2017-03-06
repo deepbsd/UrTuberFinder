@@ -1,5 +1,5 @@
-var YOUTUBE_BASE_URL = 'https://www.googleapis.com/youtube/v3/search.list';
-var YOUTUBE_BASE_URL1 = 'https://www.googleapis.com/youtube/v3/channels.list';
+var YOUTUBE_BASE_URL = 'https://www.googleapis.com/youtube/v3/search';
+var YOUTUBE_BASE_URL1 = 'https://www.googleapis.com/youtube/v3/channels';
 var YOUTUBE_BASE_URL2 = 'https://gdata.youtube.com/feeds/api/standardfeeds/mostPopular';
 var API_KEY = 'AIzaSyA_MlA_Pv1yElF8PY9hy_Ak6Mmr6g2xltY';
 
@@ -8,6 +8,8 @@ function getChannelsList(searchTerm, callback) {
     url: YOUTUBE_BASE_URL1,
     data: {
       part: 'snippet',
+      managedByMe: 'false',
+      domain: 'global',
       maxResults: 15,
       order: 'rating',
       regionCode: 'US',
