@@ -8,7 +8,7 @@ function getChannelsList(searchTerm, callback) {
     url: YOUTUBE_BASE_URL1,
     data: {
       part: 'snippet',
-      managedByMe: 'false',
+      managedByMe: false,
       domain: 'global',
       maxResults: 15,
       order: 'rating',
@@ -51,7 +51,7 @@ function getMostPopularVideos(searchTerm, callback) {
 }
 
 
-function displayYouTubeSearchData(data) {
+function displayYouTubeSearchData(data) { debugger;
   var resultElement = '<h2>Results for '+data.items[0].snippet.channelTitle+'</h2>';
   console.log('Here\'s the object: '+JSON.stringify(data));
 
