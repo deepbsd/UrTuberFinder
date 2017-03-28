@@ -1,4 +1,4 @@
-/*
+/*   I can probably get rid of this stuff, but I'll keep it for now just for history
 var YOUTUBE_BASE_URL = 'https://www.googleapis.com/youtube/v3/search';
 var YOUTUBE_BASE_URL1 = 'https://www.googleapis.com/youtube/v3/channels';
 var YOUTUBE_BASE_URL2 = 'https://gdata.youtube.com/feeds/api/standardfeeds/mostPopular';
@@ -42,7 +42,7 @@ function getUserVideos(username) {
 
       return jQuery.get(youTubeRequest('search', {
         channelId: payload.items[0].id,
-        type: 'video',           
+        type: 'video',
         part: 'snippet',
         maxResults: 50
       }), {
@@ -93,57 +93,6 @@ function queryBestRatedChannelsFor(q) {
 }  // End of queryBestRatedChannelsFor()
 
 
-
-/*
-// Not sure if I want to use this function again...
-function getChannelsList(searchTerm, callback) {
-  var settings = {
-    url: YOUTUBE_BASE_URL1,
-    data: {
-      part: 'snippet',
-      managedByMe: false,
-      domain: 'global',
-      maxResults: 15,
-      order: 'rating',
-      regionCode: 'US',
-      relevanceLanguage: 'en',
-      type: 'channel',
-      key: API_KEY,
-      publishedAfter: '2016-01-01T00:00:00.00Z',
-      q: searchTerm,
-      r: 'json',
-    },
-    dataType: 'json',
-    type: 'GET',
-    success: callback
-  };
-  $.ajax(settings);
-}
-
-function getMostPopularVideos(searchTerm, callback) {
-  var settings = {
-    url: YOUTUBE_BASE_URL2,
-    data: {
-      part: 'snippet',
-      chart: 'mostPopular',
-      maxResults: 15,
-      //order: 'rating',
-      regionCode: 'US',
-      relevanceLanguage: 'en',
-      type: 'video',
-      key: API_KEY,
-      publishedAfter: '2016-01-01T00:00:00.00Z',
-      q: searchTerm,
-      r: 'json',
-    },
-    dataType: 'json',
-    type: 'GET',
-    success: callback
-  };
-  $.ajax(settings);
-}
-*/
-
 function displayYouTubeSearchData(data) {
   var resultElement = '<h2>Results for '+data.items[0].snippet.channelTitle+'</h2>';
   console.log('Here\'s the object: '+JSON.stringify(data));
@@ -162,7 +111,7 @@ function displayYouTubeSearchData(data) {
   else {
     resultElement += '<p>No results</p>';
   }
-  
+
   $('.js-search-results').html(resultElement);
 }
 
