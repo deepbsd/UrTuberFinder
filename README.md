@@ -1,4 +1,3 @@
-# UrTuberFinder 
-UrTuber Finder is a tool to help you find the Top 10 Content
-Creators for a user-supplied query string and the links to
-the top 5 videos for each content creator.
+# UrTuberFinder
+UrTuber Finder is a tool to help you find the Top Content
+Creators for a user-supplied query information and their channels.
