@@ -9,6 +9,7 @@
   <title>Find Top YouTubers</title>
 </head>
 <body>
+
   <header>
     <img src="magnifyingglass1.png" alt="magnifying glass icon" class="headerimg">
     <h1 class="header">UrTuber Finder</h1>
@@ -19,8 +20,58 @@
       <form action="#" class="js-search-form">
         <fieldset>
           <input type="text" name="channelName" placeholder="Channel Name" class="textform">
-          <input type="dropdown" name="category" placeholder="Category" class="dropdown">
-          <input type="dropdown" name="country" placeholder="Country" class="dropdown">
+          <select  name="category" class="dropdown">
+            <option value="">(choose a category)</option>
+            <option value="2">Autos &amp; Vehicles</option>
+            <option value="23">Comedy</option>
+            <option value="27">Education</option>
+            <option value="24">Entertainment</option>
+            <option value="1">Film &amp; Animation</option>
+            <option value="20">Gaming</option>
+            <option value="26">Howto &amp; Style</option>
+            <option value="10">Music</option>
+            <option value="25">News &amp; Politics</option>
+            <option value="29">Nonprofits &amp; Activism</option>
+            <option value="22">People &amp; Blogs</option>
+            <option value="15">Pets &amp; Animals</option>
+            <option value="28">Science &amp; Technology</option>
+            <option value="17">Sports</option>
+            <option value="19">Travel &amp; Events</option>
+          </select>
+          <select name="country" class="dropdown">
+            <option value="">(choose a country)</option>
+            <option value="15">American Samoa</option>
+            <option value="21">Anguilla</option>
+            <option value="25">Antigua &amp; Barbuda</option>
+            <option value="4">Australia</option>
+            <option value="11">Bahamas</option>
+            <option value="17">Barbados</option>
+            <option value="18">Bermuda</option>
+            <option value="14">British Indian Ocean Territory</option>
+            <option value="3">Canada</option>
+            <option value="27">Cayman Islands</option>
+            <option value="20">Falkland Islands</option>
+            <option value="41">Finland</option>
+            <option value="1">Great-Britain</option>
+            <option value="13">Grenada</option>
+            <option value="10">Guyana</option>
+            <option value="42">India</option>
+            <option value="6">Ireland</option>
+            <option value="16">Isle of Man</option>
+            <option value="8">Jamaica</option>
+            <option value="28">Montserrat</option>
+            <option value="5">New-Zealand</option>
+            <option value="22">Pitcairn</option>
+            <option value="24">Saint Helena, Ascension &amp; Tristan da Cunha</option>
+            <option value="26">Saint Kitts &amp; Nevis</option>
+            <option value="12">Saint Vincent &amp; The Grenadines</option>
+            <option value="7">South-Africa</option>
+            <option value="9">Trinidad &amp; Tobago</option>
+            <option value="2">United States</option>
+            <option value="23">Virgin Islands, British</option>
+            <option value="19">Virgin Islands, U.S.</option>
+          </select>
+          </select>
           <label for="" class="labeltext">Subscribers</label>
           <input type="text" name="minSubscribers" placeholder="Min" class="thirdtext">
           <input type="text" name="maxSubscribers" placeholder="Max" class="thirdtext"><br>
@@ -35,7 +86,7 @@
         <button type="submit">Search</button>
         </fieldset>
       </form>
-    </div>
+    </div>  <!-- end of envelop -->
   <div class="js-search-results">
 
   </div>
