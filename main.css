@@ -6,22 +6,24 @@
 html {
   background-color: lightgray;
 }
-body html {
+body, html {
+  min-width: 360px;
+  width: auto;
   margin: 0;
+  text-align: center;
 }
-
-div.video-box {
+div.video-box {   // These are for results of query
 	width: 100px;
 }
 div.js-search-results {
 	width: 150px;
 }
 header {
-  position: absolute;
-  margin: 0;
-  padding-left: 200px;
+  border-radius: 6px;
+  position: static;
+  margin: 0px auto;
   background-color: #A81A2B;
-  width: 100%;
+  width: 90%;
   height: 100px;
   float: center;
 }
@@ -34,32 +36,40 @@ img.headerimg {
   vertical-align: middle;
 }
 h1.header {
-  /*font-family: 'Baloo Bhaina', cursive;*/
   margin: 0px auto;
   padding: 0px 0px 5px 0px;
   font-family: 'Coiny', cursive;
   font-size: 32px;
   color: white;
-  width: 35%;
+  width: 250px;
   display: inline-block;
 }
 h3.header {
-  margin: 0;
-  margin-left: 100px;
+  margin: 0px auto;
+  padding: 0px 0px 5px 0px;
   color: white;
   font-size: 14px;
   font-family: cursive;
   font-style: italic;
+  width: 200px;
 }
 .envelope {
-  align: center;
+  text-align: center;
+}
+fieldset {
+  border-radius: 8px;
 }
 form.js-search-form {
   background-color: white;
-  position: fixed;
-  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
   min-width: 325px;
   width: 70%;
+}
+input {
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 15px;
 }
 .textform  {
   width: 100%;
@@ -84,6 +94,8 @@ form.js-search-form {
 .latestvideo {
   margin-right: 70px;
   float: right;
+  font-family: sans-serif;
+  color: gray;
 }
 .halftext {
   margin-left: 8px;
@@ -95,14 +107,23 @@ form.js-search-form {
 .textform2 {
   margin-top: 5px;
   width: 100%;
-  height: 50px;
+  height: 40px;
   padding-left: 30px;
 }
 .labeltext {
-
+  font-family: sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: gray;
 }
 button {
-  width: 100px;
+  border-radius: 6px;
+  width: 200px;
   margin-top: 15px;
-
+  background-color: #A81A2B;
+  color: white;
+  border: none;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Coiny";
 }
