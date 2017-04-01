@@ -8,7 +8,7 @@ html {
   background-color: lightgray;
 }
 body, html {
-  min-width: 360px;
+  /*min-width: 360px;*/
   width: auto;
   margin: 0;
 }
@@ -103,11 +103,30 @@ input {
   margin-bottom: 5px;
   padding-left: 30px;
 }
+@media only screen and (min-width: 720px) {
+  .textform {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+  }
+}
 .dropdown {
   width: 100%;
   height: 35px;
-  margin-bottom: 5px;
-  /*padding-left: 30px;*/
+  margin-bottom: 2%;
+}
+@media only screen and (min-width: 720px) {
+  .dropdown {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+  }
+  select:last-of-type {
+    margin-right: 0;
+  }
+}
+option {
+  padding-left: 30px;
 }
 .thirdtext {
   width: 34%;
