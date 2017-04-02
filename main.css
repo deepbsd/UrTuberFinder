@@ -16,7 +16,7 @@ body, html {
 
 /*  Header Styles  */
 header {
-  min-width: 325px;
+  /*min-width: 325px;*/
   border-radius: 6px;
   position: static;
   background-color: #A81A2B;
@@ -57,7 +57,7 @@ h3.header {
 }
 .y-outerwrap {
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
 }
 
 
@@ -70,7 +70,7 @@ fieldset {
 }
 form.js-search-form {
   background-color: white;
-  min-width: 325px;
+  /*min-width: 325px;*/
 }
 select {
   font-family: sans-serif;
@@ -190,5 +190,3 @@ button {
 div.video-box {   // These are for results of query
   width: 100px;
 }
-
-
