@@ -8,7 +8,7 @@ function getChannelsList(searchTerm, callback) {
     url: YOUTUBE_BASE_URL1,
     data: {
       part: 'snippet',
-      managedByMe: 'false',
+      managedByMe: false,
       domain: 'global',
       maxResults: 15,
       order: 'rating',
